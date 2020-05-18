@@ -20,7 +20,6 @@ from sklearn.model_selection import train_test_split, cross_val_score
 full_train_data = pd.read_csv("dengue_features_train.csv")
 full_train_target= pd.read_csv("dengue_labels_train.csv")
 full_test_data = pd.read_csv("dengue_features_test.csv")
-full_test_target = pd.read_csv("submission_format.csv")
 train_data = full_train_data.drop(["year","weekofyear","week_start_date"],axis = 1)
 train_target = full_train_target["total_cases"]
 test_data = full_test_data.drop(["year","weekofyear","week_start_date"],axis = 1)
